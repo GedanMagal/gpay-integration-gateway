@@ -237,8 +237,12 @@
     document.getElementById('response').innerHTML = ""; 
     document.getElementById('response').innerHTML = `
     Signature: ${token.signature} 
+
     Protocol Version: ${token.protocolVersion} 
+
     Encrypted Message: ${signedMessage.encryptedMessage} 
+
     Ephemeral PublicKey: ${signedMessage.ephemeralPublicKey} 
-    ag: ${signedMessage.tag}`;
+
+    Tag: ${signedMessage.tag}`;
   }
